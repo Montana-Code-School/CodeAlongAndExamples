@@ -6,21 +6,23 @@ var Main = React.createClass({
 		return (
 			<div>
 				<div className="container jumbotron">
+
 					<h2 className="theTitle">Hello from Lauren's awesome page!</h2>
 					<p> This is some nonsense text This is some nonsense text This is some nonsense text</p>
-					
-					
-					<Link to='home'>
+					<Link to='/'>
 						<button className="btn btn-success">Home</button>
 					</Link>
-					<Link to='about'>
+					<Link to='/about'>
 						<button className="btn btn-success">About</button>
 					</Link>
-					<Link to="animals">
+					<Link to="/animals">
 						<button className="btn btn-success">Animals</button>
-					</Link>	
-					{this.props.children}
-				</div>	
+					</Link>
+
+
+
+				</div>
+				{this.props.children}
 			</div>
 			)
 	}
