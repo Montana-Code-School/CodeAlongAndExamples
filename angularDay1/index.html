@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="firstApp">
+  <head>
+    <title>My First Angular App</title>
+  </head>
+  <body ng-controller="mainCtrl">
+
+    <div ng-repeat="tool in tools">
+      <h3> Name of Tool: {{tool.name}}</h3>
+      <p>Description: {{tool.description}}</p>
+
+    </div>
+
+    <button type="button" ng-click="getThings()">Click here to get things</button>
+    <div ng-repeat="thing in things">
+      <img src={{thing.images.fixed_height.url}} alt="" />
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./mainCtrl.js"></script>
+    <script src="./mainServ.js"></script>
+  </body>
+</html>
