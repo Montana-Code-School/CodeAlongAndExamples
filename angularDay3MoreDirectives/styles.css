@@ -1,0 +1,30 @@
+.login {
+  position: fixed;
+  width: 40vw;
+  height: 40vh;
+  top: 0;
+  bottom:0;
+  left:0;
+  right: 0;
+  margin: auto;
+  background-color:rgba(79, 98, 60, 0.88);
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+}
+
+input {
+    font-size: 50px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+body, .list {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(3, 32, 61);
+}
+
+body {
+  background-image: url("https://media.giphy.com/media/foBFTg7sh0BO/giphy.gif")
+}
